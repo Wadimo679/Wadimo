@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meine Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Willkommen auf meiner Website</h1>
+  </header>
+  <main>
+    <p id="greeting">Klicke auf den Button, um eine Nachricht anzuzeigen:</p>
+    <button onclick="zeigeNachricht()">Nachricht anzeigen</button>
+  </main>
+
+  <script>
+    function zeigeNachricht() {
+      document.getElementById('greeting').innerText = 'Danke, dass du meine Website besuchst!';
+    }
+  </script>
+</body>
+</html>
+
